@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janle\\Desktop\\IMS\\IDPA\\GEBUZINS\\GebuZins\\GebuZins.csproj": {}
+    "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\GEBUZINS\\GebuZins\\GebuZins.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janle\\Desktop\\IMS\\IDPA\\GEBUZINS\\GebuZins\\GebuZins.csproj": {
+    "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\GEBUZINS\\GebuZins\\GebuZins.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janle\\Desktop\\IMS\\IDPA\\GEBUZINS\\GebuZins\\GebuZins.csproj",
+        "projectUniqueName": "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\GEBUZINS\\GebuZins\\GebuZins.csproj",
         "projectName": "GebuZins",
-        "projectPath": "C:\\Users\\janle\\Desktop\\IMS\\IDPA\\GEBUZINS\\GebuZins\\GebuZins.csproj",
-        "packagesPath": "C:\\Users\\janle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janle\\Desktop\\IMS\\IDPA\\GEBUZINS\\GebuZins\\obj\\",
+        "projectPath": "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\GEBUZINS\\GebuZins\\GebuZins.csproj",
+        "packagesPath": "C:\\Users\\Elena_c7pcoaq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Elena_c7pcoaq\\OneDrive\\Dokumente\\GitHub\\GEBUZINS\\GebuZins\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\janle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Elena_c7pcoaq\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

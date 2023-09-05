@@ -1,0 +1,17 @@
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\bin\Debug\net6.0-windows\GebuZins.exe
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\bin\Debug\net6.0-windows\GebuZins.deps.json
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\bin\Debug\net6.0-windows\GebuZins.runtimeconfig.json
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\bin\Debug\net6.0-windows\GebuZins.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\bin\Debug\net6.0-windows\GebuZins.pdb
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.Form1.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.Form2.resources
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.csproj.GenerateResource.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.AssemblyInfoInputs.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.AssemblyInfo.cs
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.csproj.CoreCompileInputs.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\refint\GebuZins.dll
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.pdb
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.genruntimeconfig.cache
+C:\Users\Elena_c7pcoaq\OneDrive\Dokumente\GitHub\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\ref\GebuZins.dll
