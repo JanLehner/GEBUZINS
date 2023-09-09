@@ -30,11 +30,11 @@
         {
             label2 = new Label();
             label1 = new Label();
-            button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            buttonCalculate = new Button();
+            textBoxWealth = new TextBox();
+            textBoxInterestRate = new TextBox();
+            comboBirthmonth = new ComboBox();
+            comboBirthday = new ComboBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -45,125 +45,138 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(214, 142);
+            label2.Location = new Point(171, 114);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(130, 25);
+            label2.Size = new Size(106, 20);
             label2.TabIndex = 7;
             label2.Text = "Geburtsmonat:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(214, 90);
+            label1.Location = new Point(171, 72);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(98, 25);
+            label1.Size = new Size(80, 20);
             label1.TabIndex = 6;
             label1.Text = "Vermögen:";
             // 
-            // button1
+            // buttonCalculate
             // 
-            button1.Location = new Point(310, 349);
-            button1.Name = "button1";
-            button1.Size = new Size(162, 34);
-            button1.TabIndex = 5;
-            button1.Text = "Bonus berechnen";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            buttonCalculate.Location = new Point(248, 279);
+            buttonCalculate.Margin = new Padding(2);
+            buttonCalculate.Name = "buttonCalculate";
+            buttonCalculate.Size = new Size(130, 27);
+            buttonCalculate.TabIndex = 5;
+            buttonCalculate.Text = "Bonus berechnen";
+            buttonCalculate.UseVisualStyleBackColor = true;
+            buttonCalculate.Click += buttonCalculate_Click;
             // 
-            // textBox1
+            // textBoxWealth
             // 
-            textBox1.Location = new Point(377, 90);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 8;
+            textBoxWealth.Location = new Point(302, 72);
+            textBoxWealth.Margin = new Padding(2);
+            textBoxWealth.Name = "textBoxWealth";
+            textBoxWealth.Size = new Size(121, 27);
+            textBoxWealth.TabIndex = 8;
             // 
-            // textBox2
+            // textBoxInterestRate
             // 
-            textBox2.Location = new Point(376, 250);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 31);
-            textBox2.TabIndex = 9;
+            textBoxInterestRate.Location = new Point(301, 200);
+            textBoxInterestRate.Margin = new Padding(2);
+            textBoxInterestRate.Name = "textBoxInterestRate";
+            textBoxInterestRate.Size = new Size(121, 27);
+            textBoxInterestRate.TabIndex = 9;
             // 
-            // comboBox1
+            // comboBirthmonth
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" });
-            comboBox1.Location = new Point(377, 139);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
-            comboBox1.TabIndex = 10;
+            comboBirthmonth.FormattingEnabled = true;
+            comboBirthmonth.Items.AddRange(new object[] { "Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember" });
+            comboBirthmonth.Location = new Point(302, 111);
+            comboBirthmonth.Margin = new Padding(2);
+            comboBirthmonth.Name = "comboBirthmonth";
+            comboBirthmonth.Size = new Size(146, 28);
+            comboBirthmonth.TabIndex = 10;
             // 
-            // comboBox2
+            // comboBirthday
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(377, 196);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(182, 33);
-            comboBox2.TabIndex = 11;
+            comboBirthday.FormattingEnabled = true;
+            comboBirthday.Location = new Point(302, 157);
+            comboBirthday.Margin = new Padding(2);
+            comboBirthday.Name = "comboBirthday";
+            comboBirthday.Size = new Size(146, 28);
+            comboBirthday.TabIndex = 11;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(214, 199);
+            label3.Location = new Point(171, 159);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(104, 25);
+            label3.Size = new Size(85, 20);
             label3.TabIndex = 12;
             label3.Text = "Geburtstag:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(214, 253);
+            label4.Location = new Point(171, 202);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(79, 25);
+            label4.Size = new Size(65, 20);
             label4.TabIndex = 13;
             label4.Text = "Zinssatz:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(532, 250);
+            label5.Location = new Point(426, 200);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(27, 25);
+            label5.Size = new Size(21, 20);
             label5.TabIndex = 14;
             label5.Text = "%";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(533, 90);
+            label6.Location = new Point(426, 72);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(45, 25);
+            label6.Size = new Size(36, 20);
             label6.TabIndex = 15;
             label6.Text = "CHF";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(386, 310);
+            label7.Location = new Point(309, 248);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(0, 25);
+            label7.Size = new Size(0, 20);
             label7.TabIndex = 16;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(640, 360);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(comboBirthday);
+            Controls.Add(comboBirthmonth);
+            Controls.Add(textBoxInterestRate);
+            Controls.Add(textBoxWealth);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(buttonCalculate);
+            Margin = new Padding(2);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Eingabe Daten";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -172,11 +185,11 @@
 
         private Label label2;
         private Label label1;
-        private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private Button buttonCalculate;
+        private TextBox textBoxWealth;
+        private TextBox textBoxInterestRate;
+        private ComboBox comboBirthmonth;
+        private ComboBox comboBirthday;
         private Label label3;
         private Label label4;
         private Label label5;
