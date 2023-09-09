@@ -33,3 +33,4 @@ C:\Users\janle\Desktop\IMS\IDPA\Vorprojekt\GEBUZINS_Repo\GEBUZINS\GebuZins\obj\D
 C:\Users\janle\Desktop\IMS\IDPA\Vorprojekt\GEBUZINS_Repo\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.pdb
 C:\Users\janle\Desktop\IMS\IDPA\Vorprojekt\GEBUZINS_Repo\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.genruntimeconfig.cache
 C:\Users\janle\Desktop\IMS\IDPA\Vorprojekt\GEBUZINS_Repo\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\ref\GebuZins.dll
+C:\Users\janle\Desktop\IMS\IDPA\Vorprojekt\GEBUZINS_Repo\GEBUZINS\GebuZins\obj\Debug\net6.0-windows\GebuZins.Properties.Resources.resources

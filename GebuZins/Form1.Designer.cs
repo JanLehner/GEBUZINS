@@ -37,52 +37,61 @@
             // 
             // buttonChangeData
             // 
-            buttonChangeData.Location = new Point(249, 254);
+            buttonChangeData.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonChangeData.Location = new Point(255, 270);
             buttonChangeData.Margin = new Padding(2);
             buttonChangeData.Name = "buttonChangeData";
-            buttonChangeData.Size = new Size(130, 27);
+            buttonChangeData.Size = new Size(130, 45);
             buttonChangeData.TabIndex = 0;
-            buttonChangeData.Text = "Daten bearbeiten";
+            buttonChangeData.Text = "Neu";
             buttonChangeData.UseVisualStyleBackColor = true;
-            buttonChangeData.Click += buttonChangeData_Click;
+            buttonChangeData.Click += buttonNew_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(197, 124);
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(123, 124);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(148, 20);
+            label1.Size = new Size(181, 23);
             label1.TabIndex = 1;
             label1.Text = "Zu erhaltener Betrag:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(197, 172);
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(131, 176);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(140, 20);
+            label2.Size = new Size(173, 23);
             label2.TabIndex = 2;
             label2.Text = "Verrechnungssteuer:";
             // 
             // labelAmountToGet
             // 
             labelAmountToGet.AutoSize = true;
-            labelAmountToGet.Location = new Point(359, 124);
+            labelAmountToGet.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelAmountToGet.ForeColor = SystemColors.Control;
+            labelAmountToGet.Location = new Point(369, 124);
             labelAmountToGet.Margin = new Padding(2, 0, 2, 0);
             labelAmountToGet.Name = "labelAmountToGet";
-            labelAmountToGet.Size = new Size(76, 20);
+            labelAmountToGet.Size = new Size(92, 23);
             labelAmountToGet.TabIndex = 3;
             labelAmountToGet.Text = "XXXX CHF";
             // 
             // labelAmountTax
             // 
             labelAmountTax.AutoSize = true;
-            labelAmountTax.Location = new Point(359, 172);
+            labelAmountTax.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelAmountTax.ForeColor = SystemColors.Control;
+            labelAmountTax.Location = new Point(369, 176);
             labelAmountTax.Margin = new Padding(2, 0, 2, 0);
             labelAmountTax.Name = "labelAmountTax";
-            labelAmountTax.Size = new Size(76, 20);
+            labelAmountTax.Size = new Size(92, 23);
             labelAmountTax.TabIndex = 4;
             labelAmountTax.Text = "XXXX CHF";
             // 
@@ -90,6 +99,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DarkSlateGray;
             ClientSize = new Size(640, 360);
             Controls.Add(labelAmountTax);
             Controls.Add(labelAmountToGet);
@@ -99,6 +109,7 @@
             Margin = new Padding(2);
             Name = "Form1";
             Text = "Ausgabe Resultat";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
