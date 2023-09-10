@@ -6,7 +6,9 @@ namespace GebuZins
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form2());
+            Dataprocessor dataprocessor = new Dataprocessor();
+            Datachecker checker = new Datachecker();
+            Application.Run(new Form2(dataprocessor, checker));
         }
     }
 }
