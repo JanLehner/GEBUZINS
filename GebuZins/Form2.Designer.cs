@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             buttonCalculate = new Button();
-            textBoxWealth = new TextBox();
             textBoxInterestRate = new TextBox();
+            textBoxWealth = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -39,6 +39,11 @@
             pickerBirthday = new DateTimePicker();
             pictureBox1 = new PictureBox();
             labelError = new Label();
+            labelAmountTax = new Label();
+            labelAmountToGet = new Label();
+            label2 = new Label();
+            label7 = new Label();
+            buttonNew = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -59,7 +64,7 @@
             // 
             buttonCalculate.Anchor = AnchorStyles.None;
             buttonCalculate.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonCalculate.Location = new Point(184, 557);
+            buttonCalculate.Location = new Point(184, 533);
             buttonCalculate.Margin = new Padding(2, 3, 2, 3);
             buttonCalculate.Name = "buttonCalculate";
             buttonCalculate.Size = new Size(171, 64);
@@ -68,23 +73,23 @@
             buttonCalculate.UseVisualStyleBackColor = true;
             buttonCalculate.Click += buttonCalculate_Click;
             // 
-            // textBoxWealth
-            // 
-            textBoxWealth.Anchor = AnchorStyles.None;
-            textBoxWealth.Location = new Point(184, 282);
-            textBoxWealth.Margin = new Padding(2, 3, 2, 3);
-            textBoxWealth.Name = "textBoxWealth";
-            textBoxWealth.Size = new Size(171, 27);
-            textBoxWealth.TabIndex = 8;
-            // 
             // textBoxInterestRate
             // 
             textBoxInterestRate.Anchor = AnchorStyles.None;
-            textBoxInterestRate.Location = new Point(184, 425);
+            textBoxInterestRate.Location = new Point(184, 282);
             textBoxInterestRate.Margin = new Padding(2, 3, 2, 3);
             textBoxInterestRate.Name = "textBoxInterestRate";
             textBoxInterestRate.Size = new Size(171, 27);
-            textBoxInterestRate.TabIndex = 9;
+            textBoxInterestRate.TabIndex = 8;
+            // 
+            // textBoxWealth
+            // 
+            textBoxWealth.Anchor = AnchorStyles.None;
+            textBoxWealth.Location = new Point(184, 425);
+            textBoxWealth.Margin = new Padding(2, 3, 2, 3);
+            textBoxWealth.Name = "textBoxWealth";
+            textBoxWealth.Size = new Size(171, 27);
+            textBoxWealth.TabIndex = 9;
             // 
             // label3
             // 
@@ -118,7 +123,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.Control;
-            label5.Location = new Point(385, 283);
+            label5.Location = new Point(391, 283);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(25, 23);
@@ -131,7 +136,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(385, 426);
+            label6.Location = new Point(373, 426);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(43, 23);
@@ -147,12 +152,13 @@
             pickerBirthday.Name = "pickerBirthday";
             pickerBirthday.Size = new Size(171, 27);
             pickerBirthday.TabIndex = 17;
+            pickerBirthday.Value = new DateTime(2023, 1, 1, 0, 0, 0, 0);
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = Properties.Resources.GEBUZINS_logo;
-            pictureBox1.Location = new Point(143, 102);
+            pictureBox1.Location = new Point(143, 17);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(253, 97);
@@ -166,11 +172,75 @@
             labelError.AutoSize = true;
             labelError.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             labelError.ForeColor = Color.Red;
-            labelError.Location = new Point(195, 493);
+            labelError.Location = new Point(188, 479);
             labelError.Name = "labelError";
             labelError.Size = new Size(0, 23);
             labelError.TabIndex = 19;
             labelError.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // labelAmountTax
+            // 
+            labelAmountTax.Anchor = AnchorStyles.None;
+            labelAmountTax.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelAmountTax.ForeColor = SystemColors.Control;
+            labelAmountTax.Location = new Point(11, 225);
+            labelAmountTax.Margin = new Padding(2, 0, 2, 0);
+            labelAmountTax.Name = "labelAmountTax";
+            labelAmountTax.Size = new Size(344, 23);
+            labelAmountTax.TabIndex = 23;
+            labelAmountTax.Text = "XXXX CHF";
+            labelAmountTax.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // labelAmountToGet
+            // 
+            labelAmountToGet.Anchor = AnchorStyles.None;
+            labelAmountToGet.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            labelAmountToGet.ForeColor = SystemColors.Control;
+            labelAmountToGet.Location = new Point(11, 157);
+            labelAmountToGet.Margin = new Padding(2, 0, 2, 0);
+            labelAmountToGet.Name = "labelAmountToGet";
+            labelAmountToGet.Size = new Size(344, 23);
+            labelAmountToGet.TabIndex = 22;
+            labelAmountToGet.Text = "XXXX CHF";
+            labelAmountToGet.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.None;
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(182, 202);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(173, 23);
+            label2.TabIndex = 21;
+            label2.Text = "Verrechnungssteuer:";
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.None;
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.Control;
+            label7.Location = new Point(174, 134);
+            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(181, 23);
+            label7.TabIndex = 20;
+            label7.Text = "Zu erhaltener Betrag:";
+            // 
+            // buttonNew
+            // 
+            buttonNew.Anchor = AnchorStyles.None;
+            buttonNew.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonNew.Location = new Point(184, 614);
+            buttonNew.Margin = new Padding(2);
+            buttonNew.Name = "buttonNew";
+            buttonNew.Size = new Size(171, 64);
+            buttonNew.TabIndex = 24;
+            buttonNew.Text = "Neu";
+            buttonNew.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -178,6 +248,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(539, 701);
+            Controls.Add(buttonNew);
+            Controls.Add(labelAmountTax);
+            Controls.Add(labelAmountToGet);
+            Controls.Add(label2);
+            Controls.Add(label7);
             Controls.Add(labelError);
             Controls.Add(pictureBox1);
             Controls.Add(pickerBirthday);
@@ -185,8 +260,8 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBoxInterestRate);
             Controls.Add(textBoxWealth);
+            Controls.Add(textBoxInterestRate);
             Controls.Add(label1);
             Controls.Add(buttonCalculate);
             Margin = new Padding(2, 3, 2, 3);
@@ -209,5 +284,11 @@
         private DateTimePicker pickerBirthday;
         private PictureBox pictureBox1;
         private Label labelError;
+        private Label labelAmountTax;
+        private Label labelAmountToGet;
+        private Label label2;
+        private Label label7;
+        private Button buttonNew;
+        private TextBox textInterestRate;
     }
 }
