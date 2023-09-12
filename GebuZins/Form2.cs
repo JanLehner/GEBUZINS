@@ -13,7 +13,7 @@
 
         private void ButtonCalculate_Click(object sender, EventArgs e)
         {
-
+            if (textBoxWealth.Text == "" || textBoxInterestRate.Text == "") return;
             decimal birthdayDate = Convert.ToDecimal(pickerBirthday.Value.Day);
             decimal wealthAmount = Convert.ToDecimal(textBoxWealth.Text);
             decimal interestRate = Convert.ToDecimal(textBoxInterestRate.Text);
