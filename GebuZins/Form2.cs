@@ -1,19 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace GebuZins
+﻿namespace GebuZins
 {
     public partial class Form2 : Form
     {
-        private Dataprocessor _dataprocessor;
-        private Datachecker _checker;
+        private readonly Dataprocessor _dataprocessor;
+        private readonly Datachecker _checker;
         public Form2(Dataprocessor dataprocessor, Datachecker checker)
         {
             InitializeComponent();
@@ -21,15 +11,27 @@ namespace GebuZins
             _checker = checker;
         }
 
-        private void buttonCalculate_Click(object sender, EventArgs e)
+        private void ButtonCalculate_Click(object sender, EventArgs e)
         {
-            string birthdayDate = Convert.ToString(this.pickerBirthday.Value);
-            string wealthAmount = this.textBoxWealth.Text;
-            string interestRate = this.textBoxInterestRate.Text;
-            /*Hier Prüfung der Daten*/
-            decimal[] results = _dataprocessor.processData(_checker.checkData(birthdayDate, wealthAmount, interestRate));
-            this.labelAmountToGet.Text = (results[0] + " CHF");
-            this.labelAmountTax.Text = (results[1] + " CHF");
+
+            decimal birthdayDate = Convert.ToDecimal(pickerBirthday.Value.Day);
+            decimal wealthAmount = Convert.ToDecimal(textBoxWealth.Text);
+            decimal interestRate = Convert.ToDecimal(textBoxInterestRate.Text);
+            decimal[] results = _dataprocessor.ProcessData(birthdayDate, wealthAmount, interestRate);
+            labelAmountToGet.Text = (results[0] + " CHF");
+            labelAmountTax.Text = (results[1] + " CHF");
+        }
+
+        private void CheckInputData(object sender, EventArgs e)
+        {
+            _checker.CheckData(sender);
+        }
+
+        private void ButtonNew_Click(object sender, EventArgs e)
+        {
+            textBoxInterestRate.Text = "";
+            pickerBirthday.Value = new DateTime(DateTime.Now.Year, 1, 1);
+            textBoxWealth.Text = "";
         }
     }
 }

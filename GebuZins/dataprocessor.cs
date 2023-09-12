@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GebuZins
+﻿namespace GebuZins
 {
     public class Dataprocessor
     {
-        public decimal[] processData(decimal[] data)
+        public decimal[] ProcessData(decimal birthdayDate, decimal wealthAmount, decimal interestRate)
         {
             decimal[] results = new decimal[2];
-            
-            decimal wealthAmount = data[0];
-            decimal interestRate = data[1];
-            decimal birthdayDate = data[2];
 
             decimal amountPerDay = ((wealthAmount / 100) * interestRate) / 365;
             decimal amountToGet = amountPerDay * birthdayDate;
