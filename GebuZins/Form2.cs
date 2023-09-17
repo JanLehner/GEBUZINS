@@ -13,7 +13,20 @@
 
         private void ButtonCalculate_Click(object sender, EventArgs e)
         {
-            if (textBoxWealth.Text == "" || textBoxInterestRate.Text == "") return;
+            labelError.Text = "";
+            textBoxWealth.BackColor = Color.White;
+            textBoxInterestRate.BackColor = Color.White;
+
+            if (textBoxWealth.Text == "" || textBoxInterestRate.Text == "")
+            {
+                labelError.Text = "Bitte füllen Sie alle Felder aus.";
+                labelAmountToGet.Text = ("- CHF");
+                labelAmountTax.Text = ("- CHF");
+                if (textBoxWealth.Text == "") textBoxWealth.BackColor = Color.LightCoral;
+                if (textBoxInterestRate.Text == "") textBoxInterestRate.BackColor = Color.LightCoral;
+                return;
+            }
+
             decimal birthdayDate = Convert.ToDecimal(pickerBirthday.Value.Day);
             decimal wealthAmount = Convert.ToDecimal(textBoxWealth.Text);
             decimal interestRate = Convert.ToDecimal(textBoxInterestRate.Text);
@@ -32,6 +45,11 @@
             textBoxInterestRate.Text = "";
             pickerBirthday.Value = new DateTime(DateTime.Now.Year, 1, 1);
             textBoxWealth.Text = "";
+            labelAmountToGet.Text = ("- CHF");
+            labelAmountTax.Text = ("- CHF");
+            labelError.Text = "";
+            textBoxWealth.BackColor = Color.White;
+            textBoxInterestRate.BackColor = Color.White;
         }
     }
 }
