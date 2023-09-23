@@ -11,7 +11,7 @@
             decimal inputTax = (amountToGet / 100) * 35;
 
             results[0] = decimal.Round(amountToGet, 2);
-            results[1] = decimal.Round(inputTax, 2); ;
+            results[1] = decimal.Round(inputTax, 2);
             return results;
         }
     }
