@@ -294,6 +294,5 @@
         private Label label2;
         private Label label7;
         private Button buttonNew;
-        private TextBox textInterestRate;
     }
 }
